@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "Old Reddit",
+  "version": "1.0",
+
+  "description": "Automaticall redirects reddit.com to old.reddit.com",
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["oldReddit.js"],
+      "run_at": "document_start"
+    }
+  ]
+
+}
